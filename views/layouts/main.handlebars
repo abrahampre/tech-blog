@@ -9,18 +9,20 @@
 </head>
 
 <body>
+  <h1 class= "abrahams"> Abrahams Tech Blog </h1>
   <div class="wrapper">
     <header>
       <h1>
         <a href="/">TECH BLOG!</a>
       </h1>
-       <nav>
-       {{#if loggedIn}}
-       <button id="logout" class="btn-no-style">logout</button>
-       {{else}}
-       <a href="/login">login</a>
-       {{/if}}
-       </nav>
+        <nav>
+        {{#if loggedIn}}
+        <a href="/dashboard">Dashboard</a>
+        <button id="logout" class="btn-no-style">Logout</button>
+        {{else}}
+        <a href="/login">Login</a>
+        {{/if}}
+        </nav>
     </header>
     <main>
       {{{ body }}}
